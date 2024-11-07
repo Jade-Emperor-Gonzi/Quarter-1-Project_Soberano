@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Full Layout Sample</title>
+	<style>
+		html, body{
+			margin: 0;
+			padding: 0;
+			height: 100px;
+			font-family: cursive;
+		}
+
+		.container{
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+			background-color: powderblue;
+		}
+
+		.header{
+			background-image: urL('woods.jpg');
+			background-size: cover;
+			padding: 150px;
+			color: whitesmoke;
+			text-align: center;
+			font-size: 100px;
+			flex-shrink: 0;
+		}
+
+		.main{
+			display: flex;
+			flex-grow: 1;
+		}
+
+		.Message{
+			text-align: center;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		}
+
+		.sidebar{
+			width: 15%;
+			background-color: #cfaf73;
+			padding: 20px;
+			box-sizing: border-box;
+			font-size: 25px;
+			text-align: center;
+		}
+
+		.main-content{
+			flex-grow: 1;
+			background-color: beige;
+			padding: 20px;
+			box-sizing: border-box;
+			overflow-y: auto;
+		}
+
+		.form-section{
+			margin: 20px;
+			padding: 15px;
+			background-color: #e2cb9f;
+			border: 1px solid black;
+		}
+
+		input[type=submit]{
+			padding: 10px 20px;
+			margin: 10px 5px;
+			background-color: green;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover{
+			background-color: Darkgreen;
+			padding: 15px 25px;
+		}
+
+		input[type=reset]{
+			padding: 10px 20px;
+			margin: 10px 5px;
+			background-color: red;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type="reset"]:hover{
+			background-color: darkred;
+			padding: 15px 25px;
+		}
+
+		textarea{
+			margin: 30px auto;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			Woodworks
+		</div>
+
+		<div class="main">
+			<div class="sidebar">
+				<a href="index.html" target="_self"> Home </a> <br><br>
+				<a href="shop.html" target="_self"> Shop </a>
+			</div>
+
+			<div class="main-content">
+				<h2>Products</h2>
+		<section id="Message">
+			<div class="Message">
+				<div class="wood">
+				<img src="Floating Shelves.webp" style="width: 300px;""height: auto;">
+				<h3>Floating Shelves (Designs not included)</h3>
+				<p>PHP 6,100.00</p>
+				</div>
+				
+				<div class="wood">
+				<img src="Table.webp" style="width: 300px;""height: auto;"> <br>
+				<h3>Dining Table</h3>
+				<p>PHP 20,300.00</p>
+				</div>
+
+				<div class="wood">
+				<img src="drawer.webp" style="width: 300px;""height: auto;"> <br>
+				<h3>Wood Drawer</h3>
+				<p>PHP 14,000.00</p>
+				</div>
+
+				<div class="wood">
+				<img src="Screenshot 2024-10-17 104946.webp" style="width: 300px;""height: 1px;"> <br>
+				<h3>Kobidi Toilet</h3>
+				<p>PHP 1,340,800.00</p>
+				</div>
+			</div>
+		</section>
+				<p>the wood is amazing</p> <br>
+
+				<p>Kobidi Toilet</p> <br>
+
+				<div class="form-section">
+					<h3>Order Form</h3>
+					<form>
+						<label for="Fullname">Full Name:</label>
+						<input type="Fullname" id="Fullname" name="Fullname">
+						<br><br>
+
+						<label for="Message">What will you be ordering?</label> <br>
+						<textarea id="Message" name="Message"></textarea>
+						<br><br>
+
+						<label for="email">Enter your email:</label>
+						<input type="text" id="Fullname"name="Fullname">
+						<br><br>
+
+						<label for="Fullname">Address:</label>
+						<input type="Fullname" id="Address" name="Address">
+						<br><br>
+
+						<label for="Message">Address Notes; Floor number, room number, etc</label> <br>
+						<textarea id="Message" name="Message"></textarea>
+						<br><br>
+
+						<input type="submit" name="submit">
+						<input type="reset" name="reset">
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

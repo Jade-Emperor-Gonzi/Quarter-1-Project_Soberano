@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Full Layout Sample</title>
+	<style>
+		html, body{
+			margin: 0;
+			padding: 0;
+			height: 100px;
+			font-family: cursive;
+		}
+
+		.container{
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+			background-color: powderblue;
+		}
+
+		.header{
+			background-image: urL('woods.jpg');
+			background-size: cover;
+			padding: 150px;
+			color: whitesmoke;
+			text-align: center;
+			font-size: 100px;
+			flex-shrink: 0;
+		}
+
+		.main{
+			display: flex;
+			flex-grow: 1;
+		}
+
+		.Message{
+			text-align: center;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		}
+
+		.sidebar{
+			width: 15%;
+			background-color: #cfaf73;
+			padding: 20px;
+			box-sizing: border-box;
+			font-size: 25px;
+			text-align: center;
+		}
+
+		.main-content{
+			flex-grow: 1;
+			background-color: beige;
+			padding: 20px;
+			box-sizing: border-box;
+			overflow-y: auto;
+		}
+
+		.form-section{
+			margin: 20px;
+			padding: 15px;
+			background-color: #e2cb9f;
+			border: 1px solid black;
+		}
+
+		input[type=submit]{
+			padding: 10px 20px;
+			margin: 10px 5px;
+			background-color: green;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover{
+			background-color: Darkgreen;
+			padding: 15px 25px;
+		}
+
+		input[type=reset]{
+			padding: 10px 20px;
+			margin: 10px 5px;
+			background-color: red;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type="reset"]:hover{
+			background-color: darkred;
+			padding: 15px 25px;
+		}
+
+		textarea{
+			margin: 30px auto;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			Woodworks
+		</div>
+
+		<div class="main">
+			<div class="sidebar">
+				<a href="Angeles_ICT9Ruby_Q1Project_Soberano_Gonzi.html" target="_self"> Home </a> <br><br>
+				<a href="shop.html" target="_self"> Shop </a>
+			</div>
+
+			<div class="main-content">
+				<h2>About us</h2>
+		<section id="Message">
+			<div class="Message">
+				<div class="wood">
+				<img src="wood 1.jpeg" style="width: 500px;""height: auto;""text-align: center;">
+				<h2>Wood Works</h2>
+				<p>Are you looking for unique, handcrafted products? Dive into the world of wood works, where every item is a masterpiece, carefully crafted by skilled artisans with generations of tradition. Whether you're decorating your home, searching for the perfect gift, or looking to add a touch of authenticity to your style, handicrafts offer something special.</p>
+				</div>
+				<br>
+				
+				<div class="wood">
+				<img src="wood 2.jpg" style="width: 500px;""height: auto;""text-align: center;"> <br>
+				<h2>Well Handling</h2>
+				<p>Are you in search of beautifully crafted wood furniture that not only elevates your space but stands the test of time? At our Woodworks, we pride ourselves on quality craftsmanship and exceptional product handling to ensure every piece of wood furniture is durable, stylish, and perfectly finished</p>
+				</div>
+			</div>
+		</section>
+				<p>the wood is amazing</p> <br>
+
+				<p><b>Kobidi Toilet</b></p> <br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
